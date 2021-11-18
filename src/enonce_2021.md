@@ -7,7 +7,7 @@ rights: Creative Commons CC BY-NC-SA
 
 # Organisation
 
-* Groupes de 2 ou 3 étudiants du même groupe de TD.
+* Groupes de 2 ou 3 étudiants (pas forcément du même groupe de TD).
 * Déclaration des groupes :
   * au plus tard le jeudi 18/11/2021, par dépôt sur CURSUS d'un fichier contenant le nom des membres du groupe
   * si pas inscrit dans un groupe à cette date : note de 0 au projet
