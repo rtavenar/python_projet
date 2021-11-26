@@ -24,7 +24,7 @@ La section "Bonus" ci-dessous vous propose également des objectifs secondaires 
 Dans le cadre de la vaccination contre la COVID-19, une grande partie des prises de rendez-vous se font en ligne, via des plateformes (dont doctolib).
 Pour permettre à des applications tierces (telle que ViteMaDose, par exemple) d'accéder aux informations de rendez-vous disponibles, ces plateformes publient les données relatives aux centres de vaccination et aux rendez-vous qu'ils proposent.
 
-Votre but principal, dans le cadre de ce projet, sera de **lister les centres de vaccination situés à Rennes qui proposent des premières injections de vaccin anti-COVID-19 (sans se soucier de savoir si des créneaux sont disponibles)**.
+Votre but principal, dans le cadre de ce projet, sera de **lister les centres de vaccination situés à Rennes qui proposent des ~~premières~~ injections de vaccin anti-COVID-19 (sans se soucier de savoir si des créneaux sont disponibles)**, et d'afficher pour ces centres les intitulés (attribut `name`) de `visit_motives`.
 
 Pour cela, vous vous appuierez sur des données disponibles librement, présentées plus en détail dans la section "Données" ci-dessous.
 
