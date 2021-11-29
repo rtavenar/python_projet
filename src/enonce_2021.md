@@ -24,7 +24,7 @@ La section "Bonus" ci-dessous vous propose également des objectifs secondaires 
 Dans le cadre de la vaccination contre la COVID-19, une grande partie des prises de rendez-vous se font en ligne, via des plateformes (dont doctolib).
 Pour permettre à des applications tierces (telle que ViteMaDose, par exemple) d'accéder aux informations de rendez-vous disponibles, ces plateformes publient les données relatives aux centres de vaccination et aux rendez-vous qu'ils proposent.
 
-Votre but principal, dans le cadre de ce projet, sera de **lister les centres de vaccination situés à Rennes qui proposent des ~~premières~~ injections de vaccin anti-COVID-19 (sans se soucier de savoir si des créneaux sont disponibles)**, et d'afficher pour ces centres les intitulés (attribut `name`) de `visit_motives`.
+Votre but principal, dans le cadre de ce projet, sera de **lister les centres de vaccination ~~situés à Rennes~~ rattachés à une structure rennaise qui proposent des premières injections de vaccin anti-COVID-19 (sans se soucier de savoir si des créneaux sont disponibles)**, et d'afficher pour ces centres les intitulés (attribut `name`) de `visit_motives`.
 
 Pour cela, vous vous appuierez sur des données disponibles librement, présentées plus en détail dans la section "Données" ci-dessous.
 
@@ -33,11 +33,12 @@ Pour cela, vous vous appuierez sur des données disponibles librement, présent�
 
 Le site <https://data.gouv.fr> met régulièrement à jour une liste des centres de vaccination situés en France. Les informations permettant de récupérer ces données sont disponibles sur [cette page](https://www.data.gouv.fr/fr/datasets/lieux-de-vaccination-contre-la-covid-19/).
 
-Vous devrez vous baser sur ces données pour repérer les centres de vaccinations situés à Rennes (le code postal de la ville de Rennes est 35000).
+Vous devrez vous baser sur ces données pour repérer les centres de vaccinations ~~situés à Rennes~~ rattachés à une structure rennaise (le code postal de la ville de Rennes est 35000).
 Il vous est demandé d'accéder à ces données via l'API REST (et non pas en enregistrant le fichier de données sur votre ordinateur). De cette manière, à chaque fois que votre script s'exécutera, vous travaillerez sur la dernière version disponible de la liste des centres de vaccination.
 
 Dans ces données, une URL est associée à chaque centre de vaccination, il s'agit de l'adresse à entrer dans un navigateur web pour atteindre l'interface de prise de rendez-vous pour le centre en question.
-Dans ce projet, nous ne nous intéresserons qu'aux centres pour lesquels l'interface de réservation est la plateforme doctolib.
+Dans ce projet, nous ne nous intéresserons qu'aux centres pour lesquels l'interface de réservation est la plateforme doctolib. Vous devrez donc filtrer pour ne conserver que les 
+centres dont l'URL contient la sous-chaîne `"doctolib"`.
 
 Voici un exemple d'URL associée à un centre de vaccination :
 <https://partners.doctolib.fr/centre-de-sante/ile-et-vilaine/centre-de-vaccination-covid-19-vaccimobile-35-ars-communes-ile-et-vilaine?pid=practice-178662&enable_cookies_consent=1>
